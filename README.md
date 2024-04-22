@@ -1,6 +1,9 @@
 # Likert Charts
 This repo demonstrates how to use [apexcharts](https://apexcharts.com/) to visualise likert data using box plots and stacked bar charts.
 
+This branch is setup to handle 7-point likert scales. Checkout the [`main`](https://github.com/robdongas/likert-charts/tree/main) branch if you want a 5-point likert scale.
+
+
 It is intended to be used by researchers who have some familiarity with Javascript (including React and the Apexcharts library). It is set up somewhat flexibly to allow different questionnaires.
 
 The project is using [Vite](https://vitejs.dev/) for the dev server and build pipeline.
