@@ -1,14 +1,16 @@
 # Likert Charts
 This repo demonstrates how to use [apexcharts](https://apexcharts.com/) to visualise likert data using box plots and stacked bar charts.
 
-It is intended to be used by researchers who have some familiarity with Javascript (including React and the Apexcharts library). It is set up somewhat flexibly to allow different questionnaire types.
+It is intended to be used by researchers who have some familiarity with Javascript (including React and the Apexcharts library). It is set up somewhat flexibly to allow different questionnaires.
+
+The project is using [Vite](https://vitejs.dev/) for the dev server and build pipeline.
 
 ## Installation
 
 Clone the project
 
 ```bash
-  git clone https://likert-charts
+  git clone https://github.com/robdongas/likert-charts
 ```
 
 Go to the project directory
@@ -23,10 +25,10 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start the dev server
 
 ```bash
-  npm run start
+  npm run dev
 ```
 
 ## Data Setup
