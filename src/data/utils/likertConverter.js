@@ -3,7 +3,9 @@ export const likertConverter = (responses, minStatement, maxStatement) => {
 
   let SD = [];
   let D = [];
+  let SWD = [];
   let N = [];
+  let SWA = [];
   let A = [];
   let SA = [];
 
@@ -12,13 +14,17 @@ export const likertConverter = (responses, minStatement, maxStatement) => {
 
     let SDCount = countOccurrences(ratings, 1);
     let DCount = countOccurrences(ratings, 2);
-    let NCount = countOccurrences(ratings, 3);
-    let ACount = countOccurrences(ratings, 4);
-    let SACount = countOccurrences(ratings, 5);
+    let SWDCount = countOccurrences(ratings, 3);
+    let NCount = countOccurrences(ratings, 4);
+    let SWACount = countOccurrences(ratings, 5);
+    let ACount = countOccurrences(ratings, 6);
+    let SACount = countOccurrences(ratings, 7);
 
     SD.push(-SDCount);
     D.push(-DCount);
+    SWD.push(-SDCount);
     N.push(-NCount);
+    SWA.push(SACount);
     A.push(ACount);
     SA.push(SACount);
   }
@@ -26,6 +32,8 @@ export const likertConverter = (responses, minStatement, maxStatement) => {
   return {
     SD,
     D,
+    SWD,
+    SWA,
     N,
     A,
     SA,

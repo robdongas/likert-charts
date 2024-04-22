@@ -100,7 +100,7 @@ function LikertBarChart({responses, minStatement, maxStatement, title}) {
       stroke: {
         show: false,
       },
-      colors: ["#DFDFDF", "#D5604C", "#B2182B", "#4392C2", "#2066AC"],
+      colors: ["#DFDFDF","#e59f93", "#D5604C", "#B2182B", "#8ebdda", "#4392C2", "#2066AC"],
       legend: {
         position: "bottom",
         horizontalAlign: "center",
@@ -156,12 +156,20 @@ function LikertBarChart({responses, minStatement, maxStatement, title}) {
       data: likertData.N,
     },
     {
+      name: "Somewhat Disagree",
+      data: likertData.SWD,
+    },
+    {
       name: "Disagree",
       data: likertData.D,
     },
     {
       name: "Strongly Disagree",
       data: likertData.SD,
+    },
+    {
+      name: "Somewhat Agree",
+      data: likertData.SWA,
     },
     {
       name: "Agree",

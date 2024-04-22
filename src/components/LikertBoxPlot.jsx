@@ -34,8 +34,8 @@ function LikertBoxPlot({ responses, minStatement, maxStatement, title }) {
       xaxis: {
         type: 'numeric',
         min: 1,
-        max: 5,
-        tickAmount: 4
+        max: 7,
+        tickAmount: 6
       },
       grid: {
         xaxis: {
